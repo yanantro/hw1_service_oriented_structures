@@ -39,6 +39,7 @@ docker inspect --format '{{.State.Health.Status}}' catalog-service
   - `tests/test_health.py` тест, который проверяет, что `/health` возвращает 200
 
 ## Диаграмма C4 Container
+https://miro.com/app/board/uXjVEfNOJ1g=/?share_link_id=512788652361
 
 ![C4 Container диаграмма](диаграмма_С4.png)
 
