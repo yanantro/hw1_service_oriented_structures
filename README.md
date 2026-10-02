@@ -1,4 +1,5 @@
 # hw1_service_oriented_structures
+В Docker поднят Catalog Service, он отвечает 200 OK на /health.
 
 Для запуска скачиваем:
 
