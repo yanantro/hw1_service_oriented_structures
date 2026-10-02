@@ -1,0 +1,10 @@
+services:
+  catalog-service:
+    build: ./services/catalog-service
+    container_name: catalog-service
+    environment:
+      SERVICE_NAME: catalog-service
+      SERVICE_VERSION: 0.1.0
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
