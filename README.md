@@ -29,8 +29,8 @@ docker inspect --format '{{.State.Health.Status}}' catalog-service
 
 ## Файлы
 
-- `README.md` данный файл :)
-- `docs/` С4 диаграмма
+- `README.md`
+- `диаграмма_С4.png`
 - `docker-compose.yml` запуск сервиса одной командой. В нём указано, где лежит Dockerfile и что порт 8000 контейнера открывается наружу
 - `services/catalog-service/` - это сам сервис:
   - `app/main.py` код сервиса на FastAPI. В нём есть эндпоинт `/health`, который возвращает статус 200 и `{"status": "ok"}`
