@@ -3,8 +3,8 @@
 Для запуска скачиваем:
 
 ```bash
-git clone <ссылка на репозиторий>
-cd marketplace-architecture
+git clone https://github.com/yanantro/hw1_service_oriented_structures.git
+cd hw1_service_oriented_structures
 docker compose up -d --build
 ```
 
@@ -25,15 +25,6 @@ docker inspect --format '{{.State.Health.Status}}' catalog-service
 Через несколько секунд после запуска там должно быть `healthy`.
 
 Остановка сервиса через `docker compose down`.
-
-Также можно запустить через python:
-
-```bash
-cd services/catalog-service
-pip install -r requirements-dev.txt
-uvicorn app.main:app --port 8000
-pytest -q   # тест на /health
-```
 
 ## Файлы
 
